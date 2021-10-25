@@ -1,8 +1,66 @@
-##editorial url:
-https://stackblitz.com/edit/angular-ivy-zlayzc?file=src/app/app.component.html
-
+##THE CALCULATOR APP url:
+https://angular-ivy-zlayzc.stackblitz.io
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##default file to show:
 src/app/app.component.html
-
-##APP url:
-https://angular-ivy-zlayzc.stackblitz.io
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##html code:
+<h1>SIMPLE CALCULATOR</h1>
+<br />
+<input
+  type="number"
+  name="num1"
+  placeholder="Enter 1st number"
+  [(ngModel)]="num1"
+/>
+<input
+  type="number"
+  name="num2"
+  placeholder="Enter 2nd number"
+  [(ngModel)]="num2"
+/>
+<br /><br />
+<button class="btn1" (click)="add()"><strong>Addition(+)</strong></button>
+<button class="btn2" (click)="sub()"><strong>Substraction(-)</strong></button>
+<button class="btn3" (click)="mul()">
+  <strong>Multiplication(*)</strong>
+</button>
+<button class="btn4" (click)="div()"><strong>Divison(/)</strong></button>
+<div class="bd">
+  <img
+    height="300px"
+    width="400px"
+    src="https://cutewallpaper.org/21/calculator-wallpaper/HD-wallpaper-geometry-mathematics-calculator-cube-.jpg"
+  />
+</div>
+<h2>Result: {{ num3 }}</h2>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##styling or .css code
+h1 {
+  color: red;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  background-color: aqua;
+}
+.btn1 {
+  border: 2px solid red;
+  background-color: aqua;
+}
+.btn2 {
+  border: 2px solid blue;
+  background-color: darkolivegreen;
+}
+.btn3 {
+  border: 2px solid slateblue;
+  background-color: brown;
+}
+.btn4 {
+  border: 2px solid purple;
+  background-color: coral;
+}
+.bd {
+  margin: 0px;
+  padding: 0px;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
